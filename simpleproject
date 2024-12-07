@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(#133e54, #e6ded4, #eee9e5);
+      }
+
+      h1 {
+        color: #f5f5f5;
+        text-align: center;
+        font-size: 38px;
+      }
+      h2 {
+        color: white;
+        text-align: center;
+        font-weight: normal;
+        padding: 10px;
+        background: transparent;
+        border: 3px solid #212121;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 40px;
+      }
+
+      p {
+        line-height: 30px;
+        text-align: center;
+        font-style: normal;
+        color: black;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #838b87;
+        color: #f5f5f5;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 13px 24px;
+        transition: all 200ms ease;
+        border-radius: 20px;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #000000;
+        border: 1px solid #000000;
+      }
+      .learn {
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I Love Skin Care</h1>
+    <h2>
+      <em>Especially <strong>Sunscreen </strong> </em>
+    </h2>
+    <hr />
+    <img
+      class="face"
+      src="https://powderbeauty.com/cdn/shop/articles/skincare-101-back-to-basics-916695.jpg?v=1678100541&width=720"
+      alt="suncreen"
+      width="500"
+    />
+    <p>
+      Sunscreen, also known as sunblock or sun cream, is a photoprotective
+      topical product for the skin that helps protect against sunburn and most
+      importantly prevent skin cancer. Sunscreens come as lotions, sprays, gels,
+      foams, sticks, powders and other topical products.
+    </p>
+    <img
+      class="ex"
+      src="https://mms.businesswire.com/media/20210421005237/en/872734/4/200720_LANCASTER_1278_I.jpg?download=1"
+      alt="face"
+      width="200"
+    />
+    <p>
+      <a
+        href="https://en.wikipedia.org/wiki/Sunscreen"
+        target="_blank"
+        class="learn"
+        >Learn More About Sunscreens</a
+      >
+    </p>
+    <br />
+    <button>Protect My Skin Now!</button>
+    <br />
+    <p>This page was build by <span> Miriam Alva</span></p>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let info = prompt("What is your email address?");
+        let contact = prompt(" Would you like us to contact you?");
+        if (contact === "yes") {
+          alert(" Thank you " + name + " we'll be in touch!");
+        } else {
+          alert("Thank you " + name + ", hope to see you again!");
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
